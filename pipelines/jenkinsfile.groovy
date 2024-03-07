@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    curl localhost
+                    docker exec jenkins curl localhost
                     '''
                 }
             }
